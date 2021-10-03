@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href=C:\Users\Cain\Documents\GitHub\ADSelfStudyTask1-FlaskLogin\static\css\login.css>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/login.css')}}" >
 </head>
 <div class="wrapper fadeInDown">
     <div id="formContent">
       <!-- Users Details Form -->
         <div>
-            <h3>*username*</h3>
+            <h3>{{g.user.username}}'s Profile</h3>
+            <h3>User Number: {{g.user.id}}</h3>
         </div>
   
     </div>
